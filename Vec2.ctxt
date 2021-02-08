@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Vec2
+comment1.params=xIn\ yIn
+comment1.target=Vec2(double,\ double)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Vec2\r\n
+comment2.params=
+comment2.target=Vec2\ normalized()
+numComments=3

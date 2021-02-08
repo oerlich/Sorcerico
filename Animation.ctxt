@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Animation
+comment1.params=baseName\ suffix\ numFrames\ loop\ delay
+comment1.target=Animation(java.lang.String,\ java.lang.String,\ int,\ boolean,\ int)
+numComments=2
