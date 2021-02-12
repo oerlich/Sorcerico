@@ -48,8 +48,8 @@ public class GloopGlorp extends PhysicsActor
         
         defaultAnim = "Gloop Idle";
         
-        deathTime = 64;
-        deathTimeLong = 128;
+        deathTime = 76;
+        deathTimeLong = 144;
         deathCounter = 0;
         
         attackCounter = 0;
@@ -101,7 +101,7 @@ public class GloopGlorp extends PhysicsActor
             
             if(currentHealth <= 0)
             {
-                playAnimation("Gloop Die");
+                playAnimation("Gloop Hurt");
                 deathCounter = 0;
                 dead = true;
             }
@@ -113,6 +113,12 @@ public class GloopGlorp extends PhysicsActor
             
             slimeDeathSound.stop();
             slimeDeathSound.play();
+        }
+        
+        if(deathCounter == 16)
+        {
+            slimeDeathSound.play();
+            playAnimation("Gloop Die");
         }
         
         if(deathCounter >= deathTime)

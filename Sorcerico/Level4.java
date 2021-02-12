@@ -29,13 +29,13 @@ public class Level4 extends Level
         SmallSpikes smSp1 = new SmallSpikes();
         addObject(smSp1, 123, 121);
         
-        SpikesHit smSpH1 = new SpikesHit();
+        SpikesHit smSpH1 = new SmallSpikesHit();
         addObject(smSpH1, 123, 105);
         
         SmallSpikes smSp2 = new SmallSpikes();
         addObject(smSp2, 470, 121);
         
-        SpikesHit smSpH2 = new SpikesHit();
+        SpikesHit smSpH2 = new SmallSpikesHit();
         addObject(smSpH2, 470, 105);
         
         Spikes sp1 = new Spikes();

@@ -16,6 +16,8 @@ public class PhysicsActor extends AnimatedActor
     protected boolean isGrounded;
     private boolean affectGravity;
     
+    public boolean settledOnPlat = false;
+    
     public PhysicsActor(boolean affectedGravity)
     {
         super();
@@ -72,6 +74,7 @@ public class PhysicsActor extends AnimatedActor
         else
         {
             isGrounded = false;
+            settledOnPlat = false;
         }
     }
     

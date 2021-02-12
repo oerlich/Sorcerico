@@ -62,6 +62,12 @@ public class MovingPlat extends Platform
         
         for(PhysicsActor a : onPlat)
         {
+            if(!a.settledOnPlat)
+            {
+                a.setLocation(a.getX(), a.getY() - (a.getImage().getHeight()/2
+                    - (this.getImage().getHeight()/2) - 3));
+                a.settledOnPlat = true;
+            }
             a.setLocation(a.getX() + (int)(direction.x * platformSpeed),
             a.getY() + (int)(direction.y * platformSpeed));
         }

@@ -70,6 +70,9 @@ public class Level3 extends Level
         SmallSpikes smallSpikes = new SmallSpikes();
         addObject(smallSpikes, 474, 147);
         
+        SmallSpikesHit smallSpikesH = new SmallSpikesHit();
+        addObject(smallSpikesH, 474, 131);
+        
         Portal exit = new Portal();
         addObject(exit, 570, 111);
     }
