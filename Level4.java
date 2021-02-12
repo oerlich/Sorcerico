@@ -15,7 +15,7 @@ public class Level4 extends Level
      */
     public Level4()
     {
-        super(4, null);
+        super(4, new Level5());
         
         Player p = new Player();
         addObject(p, 200, 90);

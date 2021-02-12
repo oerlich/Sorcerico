@@ -101,14 +101,23 @@ public class Player extends PhysicsActor
     {
         List<Slime> coll = getObjectsInRange(50, Slime.class);
         List<Spikes> coll2 = getObjectsInRange(50, Spikes.class);
+        List<GloopGlorp> coll3 = getObjectsInRange(150, GloopGlorp.class);
         
-        List<Slime> goodColl = new ArrayList<Slime>();
+        List<Actor> goodColl = new ArrayList<Actor>();
         
         for(Slime s : coll)
         {
             if(!s.isDead())
             {
                 goodColl.add(s);
+            }
+        }
+        
+        for(GloopGlorp g : coll3)
+        {
+            if(!g.isDead() && g.isAttackActive())
+            {
+                goodColl.add(g);
             }
         }
         

@@ -46,7 +46,10 @@ public class MovingPlat extends Platform
             initSet = true;
         }
         
-        if(getX() == currDest.x && getY() == currDest.y)
+        if((getX() >= currDest.x - platformSpeed &&
+            getX() <= currDest.x + platformSpeed) &&
+            (getY() <= currDest.y + platformSpeed &&
+            (getY() >= currDest.y - platformSpeed)))
         {
             currDest = (currDest == endPoint1) ? endPoint2 : endPoint1;
         }

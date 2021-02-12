@@ -1,19 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class WinScreen here.
+ * Write a description of class CreditsScreen here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class WinScreen extends World
+public class CreditsScreen extends World
 {
 
     /**
-     * Constructor for objects of class WinScreen.
+     * Constructor for objects of class CreditsScreen.
      * 
      */
-    public WinScreen()
+    public CreditsScreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
@@ -21,13 +21,10 @@ public class WinScreen extends World
         while(Greenfoot.getKey() != null){}
     }
     
-    public void act()
+        public void act()
     {
         new GreenfootSound("bgmusic.mp3").stop();
-        String key = Greenfoot.getKey();
-        if(key != null && key.equals("escape"))
-            Greenfoot.setWorld(new CreditsScreen());
-        if(key != null && key.equals("c"))
+        if(Greenfoot.getKey() != null)
             Greenfoot.setWorld(new StartScreen());
     }
 }

@@ -12,7 +12,7 @@ public class Level extends World
     public Level nextLevel;
     
     public GreenfootSound bgMusic = new GreenfootSound("bgmusic.mp3");
-    private boolean musicPlayed;
+    protected boolean musicPlayed;
     
     /**
      * Constructor for objects of class Level.
@@ -31,6 +31,24 @@ public class Level extends World
         
         nextLevel = _nextLevel;
         
+        bgMusic.setVolume(25);
+        musicPlayed = false;
+    }
+    
+    public Level(int id, Level _nextLevel, String musicName)
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(600, 400, 1);
+        
+        while(Greenfoot.getKey() != null){}
+        
+        setPaintOrder(Shrubs.class, Platform.class, Player.class, Slime.class, Spikes.class, SmallPlatform.class);
+        
+        levelID = id;
+        
+        nextLevel = _nextLevel;
+        
+        bgMusic = new GreenfootSound(musicName);
         bgMusic.setVolume(25);
         musicPlayed = false;
     }

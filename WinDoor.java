@@ -52,7 +52,7 @@ public class WinDoor extends AnimatedActor
         if(openCounter >= openLength && !doorSound.isPlaying())
         {
             ((Level)this.getWorld()).bgMusic.stop();
-            Greenfoot.setWorld(new WinScreen());
+            Greenfoot.setWorld(((Level)this.getWorld()).nextLevel);
         }
         
         super.act();
