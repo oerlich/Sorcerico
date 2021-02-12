@@ -1,12 +1,13 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
+PROJECT TITLE: Sorcerico, Master of the Arcane
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
+VERSION or DATE: 2/8/2021
+
+HOW TO START THIS PROJECT: Download Greenfoot, open project.greenfoot and run or go to https://www.greenfoot.org/scenarios/27380?js=true
+
+AUTHORS: Oren Erlich
+
 USER INSTRUCTIONS:
+A - Move Left
+D - Move Right
+Spacebar - Jump
+Left Click - Fire Magic Bolt
