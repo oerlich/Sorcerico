@@ -42,6 +42,9 @@ public class Level2 extends Level
         Spikes spike1 = new Spikes();
         addObject(spike1, 464, 356);
         
+        SpikesHit sph1 = new SpikesHit();
+        addObject(sph1, 464, 340);
+        
         Portal exit = new Portal();
         addObject(exit, 150, 50);
         

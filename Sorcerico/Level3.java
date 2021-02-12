@@ -34,10 +34,20 @@ public class Level3 extends Level
         Spikes s3 = new Spikes();
         Spikes s4 = new Spikes();
         
+        SpikesHit sph1 = new SpikesHit();
+        SpikesHit sph2 = new SpikesHit();
+        SpikesHit sph3 = new SpikesHit();
+        SpikesHit sph4 = new SpikesHit();
+        
         addObject(s1, 473, 362);
         addObject(s2, 561, 362);
         addObject(s3, 138, 362);
         addObject(s4, 47, 362);
+        
+        addObject(sph1, 473, 346);
+        addObject(sph2, 561, 346);
+        addObject(sph3, 138, 346);
+        addObject(sph4, 47, 346);
         
         Slime enemy1 = new Slime(true);
         addObject(enemy1, 125, 275);

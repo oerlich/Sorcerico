@@ -100,7 +100,7 @@ public class Player extends PhysicsActor
     private boolean checkDead()
     {
         List<Slime> coll = getObjectsInRange(50, Slime.class);
-        List<Spikes> coll2 = getObjectsInRange(50, Spikes.class);
+        List<SpikesHit> coll2 = getObjectsInRange(40, SpikesHit.class);
         List<GloopGlorp> coll3 = getObjectsInRange(150, GloopGlorp.class);
         
         List<Actor> goodColl = new ArrayList<Actor>();
@@ -192,13 +192,13 @@ public class Player extends PhysicsActor
     {
         if(Greenfoot.isKeyDown("space") && isGrounded)
         {
-            /*
+            
             List<MovingPlat> mPS = this.getWorld().getObjects(MovingPlat.class);
             
             for(MovingPlat mp : mPS)
             {
                 mp.onPlat.remove(this);
-            }*/
+            }
             
             specialAnimCounter = 0;
             activeMovement = true;

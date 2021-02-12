@@ -29,14 +29,26 @@ public class Level4 extends Level
         SmallSpikes smSp1 = new SmallSpikes();
         addObject(smSp1, 123, 121);
         
+        SpikesHit smSpH1 = new SpikesHit();
+        addObject(smSpH1, 123, 105);
+        
         SmallSpikes smSp2 = new SmallSpikes();
         addObject(smSp2, 470, 121);
+        
+        SpikesHit smSpH2 = new SpikesHit();
+        addObject(smSpH2, 470, 105);
         
         Spikes sp1 = new Spikes();
         addObject(sp1, 550, 305);
         
+        SpikesHit sph1 = new SpikesHit();
+        addObject(sph1, 550, 289);
+        
         Spikes sp2 = new Spikes();
         addObject(sp2, 50, 305);
+        
+        SpikesHit sph2 = new SpikesHit();
+        addObject(sph2, 50, 289);
         
         Slime slime1 = new Slime(true);
         addObject(slime1, 150, 295);
